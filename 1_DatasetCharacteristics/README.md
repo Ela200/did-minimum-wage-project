@@ -5,27 +5,49 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** [Provide a direct link to your dataset. If the dataset is private, explain the reason and provide contact information for the dataset owner]
-- **Dataset Owner/Contact:** [If applicable, provide contact information for private datasets]
+- **Dataset Link:** [(https://raw.githubusercontent.com/CausalAIBook/MetricsMLNotebooks/main/data/minwage_data.csv]
+- **Dataset Owner/Contact:** Dataset used in Callaway (2022) and provided through the CausalML Book repository
 
 ### Dataset Characteristics
-- **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
-- **Number of Features:** [Total number of features in your dataset]
+- **Number of Observations:** 17549
+- **Number of Features:** 8
+- **Time Period:** 2001–2007
 
-### Target Variable/Label
-- **Label Name:** [Name of the target variable/column]
-- **Label Type:** [Classification/Regression/Clustering/Other]
-- **Label Description:** [What does this label represent? What is the prediction task?]
-- **Label Values:** [For classification: list of classes and their meanings. For regression: range of values. For other tasks: describe the label structure]
-- **Label Distribution:** [Brief description of class balance for classification or value distribution for regression]
+### Causal Framework
 
-### Feature Description
-[Provide a brief description of each feature or group of features in your dataset. If you have many features, group them logically and describe each group. Include information about data types, ranges, and what each feature represents.]
+The analysis follows a Difference-in-Differences (DiD) design. Counties exposed to a state minimum wage above the federal minimum wage are considered treated units, while counties without such exposure serve as controls.
 
-**Example format:**
-- **Feature 1 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature 2 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature Group (group_name):** [Description of a group of related features]
+The objective is to estimate the causal effect of minimum wage policies on teen employment by comparing employment trends before and after treatment across treated and untreated counties.
+
+### Outcome Variable
+
+- **lemp:** Log county-level teen employment (main outcome variable).
+
+### Treatment Variables
+
+- **treated:** Indicator equal to 1 if the state minimum wage exceeds the federal minimum wage.
+- **state_mw:** State minimum wage.
+- **fed_mw:** Federal minimum wage.
+- **G:** First treatment year used to identify treatment timing.
+
+### Covariates
+
+#### Economic Variables
+
+- **annual_avg_pay:** Average annual county pay.
+- **lavg_pay:** Log average annual county pay.
+
+#### Demographic Variables
+
+- **pop:** County population.
+- **lpop:** Log county population.
+
+#### Geographic and Time Variables
+
+- **year:** Observation year.
+- **state_name:** U.S. state.
+- **FIPS:** County identifier.
+- **region:** Census region.
 
 ## Exploratory Data Analysis
 
