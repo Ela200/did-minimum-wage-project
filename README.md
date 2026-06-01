@@ -2,11 +2,23 @@
 
 ## Repository Link
 
-[https://github.com/your_username/your_project_name]
+[https://github.com/Ela200/did-minimum-wage-project]
 
 ## Description
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+This project investigates the causal effect of minimum wage increases on county-level teen employment in the United States using Difference-in-Differences (DiD) methods.
+The analysis is based on the Chapter 16 notebook from the CausalML Book and uses county-level panel data from 2001–2007.
+Research Question:
+Do increases in minimum wage affect teen employment?
+
+Methods (so far):
+Difference-in-Differences
+Double Machine Learning (DML-DiD)
+Random Forest
+Linear Regression
+
+Dataset:
+Callaway (2022)
 
 ### Task Type
 
