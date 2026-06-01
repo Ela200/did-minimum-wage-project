@@ -1,4 +1,4 @@
-# [Your Project Title Here]
+# Difference-in-Differences Analysis of Minimum Wage Policies and Teen Employment
 
 ## Repository Link
 
