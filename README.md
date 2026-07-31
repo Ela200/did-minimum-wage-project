@@ -44,8 +44,8 @@ Causal Inference / Treatment Effect Estimation (Difference-in-Differences with D
 ## Documentation
 1. **[Literature Review](0_LiteratureReview/README.md)**
 2. **[Dataset Characteristics](1_DatasetCharacteristics/exploratory_data_analysis.ipynb)**
-3. **[Baseline Model](2_BaselineModel/baseline_model.ipynb)**
-4. **[Model Definition and Evaluation](3_Model/model_definition_evaluation.ipynb)**
+3. **[Baseline Model](2_BaselineModel/Baseline_Model.ipynb)**
+4. **[Model Definition and Evaluation](3_Model/Model_Definition_Evaluation.ipynb)**
 5. **[Presentation](4_Presentation/README.md)**
 
 ## Cover Image
