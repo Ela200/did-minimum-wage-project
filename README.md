@@ -10,7 +10,7 @@ The analysis is based on the Chapter 16 notebook from the CausalML Book and uses
 Research Question:
 Do increases in minimum wage affect teen employment?
 
-Methods (so far):
+Methods:
 Difference-in-Differences
 Double Machine Learning (DML-DiD)
 Random Forest
